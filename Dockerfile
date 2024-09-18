@@ -2,15 +2,15 @@ FROM debian:bookworm
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && \
-    apt install -y \
+RUN apt-get update && \
+    apt-get install -y \
     git \
     curl \
     wget \
     build-essential \
     ca-certificates \
-    apt-transport-https \
-    software-properties-common && \
+    nodejs \
+    npm \
     apt clean
 
 RUN wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz && \
