@@ -10,7 +10,7 @@ RUN apt-get update && \
     build-essential \
     ca-certificates \
     nodejs \
-    npm \
+    npm && \
     apt clean
 
 RUN wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz && \
