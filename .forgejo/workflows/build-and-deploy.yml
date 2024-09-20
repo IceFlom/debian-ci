@@ -10,8 +10,6 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-22.04
-    env:
-      DOCKER_HOST: tcp://docker-in-docker:2375
     steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
