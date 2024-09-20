@@ -11,9 +11,6 @@ jobs:
   docker:
     runs-on: ubuntu-22.04
     steps:
-      - name: Install Docker
-        run: curl -fsSL https://get.docker.com | sh
-        
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
